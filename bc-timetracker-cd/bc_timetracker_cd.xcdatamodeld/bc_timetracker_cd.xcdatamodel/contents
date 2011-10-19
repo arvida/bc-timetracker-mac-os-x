@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="562" systemVersion="11B26" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Company">
+        <attribute name="companyId" optional="YES" attributeType="Integer 32" defaultValueString="0"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="projects" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Project" inverseName="company" inverseEntity="Project"/>
+    </entity>
+    <entity name="Person">
+        <attribute name="firstName" optional="YES" attributeType="String"/>
+        <attribute name="lastName" optional="YES" attributeType="String"/>
+        <attribute name="personId" optional="YES" attributeType="Integer 32" defaultValueString="0"/>
+    </entity>
+    <entity name="Project">
+        <attribute name="assignedCompanyId" optional="YES" attributeType="Integer 32" defaultValueString="0"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="projectId" optional="YES" attributeType="Integer 32" defaultValueString="0"/>
+        <relationship name="company" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Company" inverseName="projects" inverseEntity="Company"/>
+    </entity>
+    <elements>
+        <element name="Company" positionX="-245" positionY="81" width="128" height="90"/>
+        <element name="Person" positionX="160" positionY="192" width="128" height="90"/>
+        <element name="Project" positionX="34" positionY="66" width="128" height="105"/>
+    </elements>
+</model>

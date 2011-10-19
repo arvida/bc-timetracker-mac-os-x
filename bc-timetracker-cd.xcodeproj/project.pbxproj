@@ -1,0 +1,649 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4249D5991437C1F30086F1EE /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4249D5981437C1F30086F1EE /* MainWindow.xib */; };
+		42625C351438A46300245E8B /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 42625C341438A46300245E8B /* Person.m */; };
+		42625C3F1438AD8A00245E8B /* TimeEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 42625C3E1438AD8A00245E8B /* TimeEntry.m */; };
+		426E1216144083E00054D2D8 /* HAKeychain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 426E1215144083E00054D2D8 /* HAKeychain.framework */; };
+		426E1217144083E40054D2D8 /* HAKeychain.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 426E1215144083E00054D2D8 /* HAKeychain.framework */; };
+		426E121A1441DB250054D2D8 /* Status_Accepted.png in Resources */ = {isa = PBXBuildFile; fileRef = 426E12181441DB250054D2D8 /* Status_Accepted.png */; };
+		426E121B1441DB250054D2D8 /* Status_Declined.png in Resources */ = {isa = PBXBuildFile; fileRef = 426E12191441DB250054D2D8 /* Status_Declined.png */; };
+		428EDB0914379B4A00C2C1FC /* DBManagedObjectCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 428EDB0814379B4A00C2C1FC /* DBManagedObjectCache.m */; };
+		4292DF021444B94300805B89 /* TimeTrackerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4292DF001444B94300805B89 /* TimeTrackerController.m */; };
+		4292DF031444B94300805B89 /* TimeTrackerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4292DF011444B94300805B89 /* TimeTrackerView.xib */; };
+		42989106143705B200408CC0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42989105143705B200408CC0 /* Cocoa.framework */; };
+		42989110143705B200408CC0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4298910E143705B200408CC0 /* InfoPlist.strings */; };
+		42989112143705B200408CC0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42989111143705B200408CC0 /* main.m */; };
+		42989116143705B200408CC0 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 42989114143705B200408CC0 /* Credits.rtf */; };
+		42989119143705B200408CC0 /* bc_timetracker_cdAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42989118143705B200408CC0 /* bc_timetracker_cdAppDelegate.m */; };
+		4298911C143705B300408CC0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4298911A143705B300408CC0 /* MainMenu.xib */; };
+		4298911F143705B300408CC0 /* bc_timetracker_cd.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4298911D143705B300408CC0 /* bc_timetracker_cd.xcdatamodeld */; };
+		429891541437791400408CC0 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 429891531437791400408CC0 /* libxml2.dylib */; };
+		429891561437791E00408CC0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 429891551437791E00408CC0 /* SystemConfiguration.framework */; };
+		4298916F1437799600408CC0 /* libRestKitCoreData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4298914A143777E700408CC0 /* libRestKitCoreData.a */; };
+		429891701437799600408CC0 /* libRestKitNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4298913A143777E700408CC0 /* libRestKitNetwork.a */; };
+		429891711437799600408CC0 /* libRestKitObjectMapping.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4298913C143777E700408CC0 /* libRestKitObjectMapping.a */; };
+		429891721437799600408CC0 /* libRestKitSupport.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4298913E143777E700408CC0 /* libRestKitSupport.a */; };
+		429891731437799600408CC0 /* libRestKitXMLParserLibxml.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42989148143777E700408CC0 /* libRestKitXMLParserLibxml.a */; };
+		4298917B14377A1B00408CC0 /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = 4298917614377A1B00408CC0 /* Settings.m */; };
+		4298917C14377A1B00408CC0 /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = 4298917814377A1B00408CC0 /* Project.m */; };
+		4298917D14377A1B00408CC0 /* Company.m in Sources */ = {isa = PBXBuildFile; fileRef = 4298917A14377A1B00408CC0 /* Company.m */; };
+		42AC9D37143CE274000824D0 /* PreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42AC9D36143CE274000824D0 /* PreferencesWindow.xib */; };
+		42B6D71C1437A9EA00019336 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B6D71B1437A9EA00019336 /* AppController.m */; };
+		42D92E5B143E529B0056A416 /* file_menu2.png in Resources */ = {isa = PBXBuildFile; fileRef = 42D92E5A143E529B0056A416 /* file_menu2.png */; };
+		42D92E5E143E55810056A416 /* PreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D92E5D143E55810056A416 /* PreferencesController.m */; };
+		42DC43C4144386A90012BA23 /* CustomStatusItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DC43C1144386A90012BA23 /* CustomStatusItem.m */; };
+		42DC43C5144386A90012BA23 /* CustomWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DC43C3144386A90012BA23 /* CustomWindow.m */; };
+		42DC43C814438C860012BA23 /* ApplicationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DC43C714438C850012BA23 /* ApplicationController.m */; };
+		42DC43CA144391CB0012BA23 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42DC43C9144391CA0012BA23 /* QuartzCore.framework */; };
+		42DD0CE11440775F00A38656 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42DD0CE01440775E00A38656 /* Security.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		42989139143777E700408CC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42989125143777E600408CC0 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 253A07FC1255161B00976E89;
+			remoteInfo = RestKitNetwork;
+		};
+		4298913B143777E700408CC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42989125143777E600408CC0 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 253A08031255162C00976E89;
+			remoteInfo = RestKitObjectMapping;
+		};
+		4298913D143777E700408CC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42989125143777E600408CC0 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 253A080C12551D3000976E89;
+			remoteInfo = RestKitSupport;
+		};
+		42989147143777E700408CC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42989125143777E600408CC0 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25BD43BD1340315800DBACDD;
+			remoteInfo = "RestKitXMLParser+Libxml";
+		};
+		42989149143777E700408CC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42989125143777E600408CC0 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 253A081412551D5300976E89;
+			remoteInfo = RestKitCoreData;
+		};
+		4298914D143777E700408CC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42989125143777E600408CC0 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3F6C39A510FE5C95008F47C5;
+			remoteInfo = "RestKit Specs";
+		};
+		4298914F143778CB00408CC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42989125143777E600408CC0 /* RestKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 255B7588133BABBF00ED76AD;
+			remoteInfo = RestKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		42DD0D4C14407E0E00A38656 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				426E1217144083E40054D2D8 /* HAKeychain.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4249D5981437C1F30086F1EE /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		42625C331438A46300245E8B /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		42625C341438A46300245E8B /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		42625C3D1438AD8A00245E8B /* TimeEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeEntry.h; sourceTree = "<group>"; };
+		42625C3E1438AD8A00245E8B /* TimeEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeEntry.m; sourceTree = "<group>"; };
+		426E1215144083E00054D2D8 /* HAKeychain.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HAKeychain.framework; sourceTree = "<group>"; };
+		426E12181441DB250054D2D8 /* Status_Accepted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Status_Accepted.png; sourceTree = "<group>"; };
+		426E12191441DB250054D2D8 /* Status_Declined.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Status_Declined.png; sourceTree = "<group>"; };
+		428EDB0714379B4A00C2C1FC /* DBManagedObjectCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManagedObjectCache.h; sourceTree = "<group>"; };
+		428EDB0814379B4A00C2C1FC /* DBManagedObjectCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManagedObjectCache.m; sourceTree = "<group>"; };
+		4292DEFF1444B94300805B89 /* TimeTrackerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeTrackerController.h; sourceTree = "<group>"; };
+		4292DF001444B94300805B89 /* TimeTrackerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeTrackerController.m; sourceTree = "<group>"; };
+		4292DF011444B94300805B89 /* TimeTrackerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimeTrackerView.xib; sourceTree = "<group>"; };
+		42989101143705B200408CC0 /* bc-timetracker-cd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bc-timetracker-cd.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		42989105143705B200408CC0 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		42989108143705B200408CC0 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		42989109143705B200408CC0 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		4298910A143705B200408CC0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4298910D143705B200408CC0 /* bc-timetracker-cd-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "bc-timetracker-cd-Info.plist"; sourceTree = "<group>"; };
+		4298910F143705B200408CC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		42989111143705B200408CC0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		42989113143705B200408CC0 /* bc-timetracker-cd-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "bc-timetracker-cd-Prefix.pch"; sourceTree = "<group>"; };
+		42989115143705B200408CC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		42989117143705B200408CC0 /* bc_timetracker_cdAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bc_timetracker_cdAppDelegate.h; sourceTree = "<group>"; };
+		42989118143705B200408CC0 /* bc_timetracker_cdAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = bc_timetracker_cdAppDelegate.m; sourceTree = "<group>"; };
+		4298911B143705B300408CC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		4298911E143705B300408CC0 /* bc_timetracker_cd.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = bc_timetracker_cd.xcdatamodel; sourceTree = "<group>"; };
+		42989125143777E600408CC0 /* RestKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RestKit.xcodeproj; path = RestKit/RestKit.xcodeproj; sourceTree = "<group>"; };
+		429891531437791400408CC0 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		429891551437791E00408CC0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		4298917514377A1B00408CC0 /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
+		4298917614377A1B00408CC0 /* Settings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Settings.m; sourceTree = "<group>"; };
+		4298917714377A1B00408CC0 /* Project.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Project.h; sourceTree = "<group>"; };
+		4298917814377A1B00408CC0 /* Project.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Project.m; sourceTree = "<group>"; };
+		4298917914377A1B00408CC0 /* Company.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Company.h; sourceTree = "<group>"; };
+		4298917A14377A1B00408CC0 /* Company.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Company.m; sourceTree = "<group>"; };
+		4298918314378B4D00408CC0 /* bc_timetracker_cd 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "bc_timetracker_cd 2.xcdatamodel"; sourceTree = "<group>"; };
+		42AC9D36143CE274000824D0 /* PreferencesWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreferencesWindow.xib; sourceTree = "<group>"; };
+		42AC9D3C143CED7B000824D0 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		42B6D71A1437A9EA00019336 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
+		42B6D71B1437A9EA00019336 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
+		42D92E5A143E529B0056A416 /* file_menu2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = file_menu2.png; sourceTree = "<group>"; };
+		42D92E5C143E55810056A416 /* PreferencesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesController.h; sourceTree = "<group>"; };
+		42D92E5D143E55810056A416 /* PreferencesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesController.m; sourceTree = "<group>"; };
+		42DC43C0144386A90012BA23 /* CustomStatusItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomStatusItem.h; sourceTree = "<group>"; };
+		42DC43C1144386A90012BA23 /* CustomStatusItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomStatusItem.m; sourceTree = "<group>"; };
+		42DC43C2144386A90012BA23 /* CustomWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomWindow.h; sourceTree = "<group>"; };
+		42DC43C3144386A90012BA23 /* CustomWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomWindow.m; sourceTree = "<group>"; };
+		42DC43C614438C850012BA23 /* ApplicationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationController.h; sourceTree = "<group>"; };
+		42DC43C714438C850012BA23 /* ApplicationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationController.m; sourceTree = "<group>"; };
+		42DC43C9144391CA0012BA23 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		42DD0CE01440775E00A38656 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		42DD0D50144080A400A38656 /* HAKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAKeychain.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		429890FE143705B200408CC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42DC43CA144391CB0012BA23 /* QuartzCore.framework in Frameworks */,
+				42DD0CE11440775F00A38656 /* Security.framework in Frameworks */,
+				4298916F1437799600408CC0 /* libRestKitCoreData.a in Frameworks */,
+				429891701437799600408CC0 /* libRestKitNetwork.a in Frameworks */,
+				429891711437799600408CC0 /* libRestKitObjectMapping.a in Frameworks */,
+				429891721437799600408CC0 /* libRestKitSupport.a in Frameworks */,
+				429891731437799600408CC0 /* libRestKitXMLParserLibxml.a in Frameworks */,
+				429891561437791E00408CC0 /* SystemConfiguration.framework in Frameworks */,
+				429891541437791400408CC0 /* libxml2.dylib in Frameworks */,
+				42989106143705B200408CC0 /* Cocoa.framework in Frameworks */,
+				426E1216144083E00054D2D8 /* HAKeychain.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		428EDB0A14379F6900C2C1FC /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				42DC43C0144386A90012BA23 /* CustomStatusItem.h */,
+				42DC43C1144386A90012BA23 /* CustomStatusItem.m */,
+				42DC43C2144386A90012BA23 /* CustomWindow.h */,
+				42DC43C3144386A90012BA23 /* CustomWindow.m */,
+				42DD0D50144080A400A38656 /* HAKeychain.h */,
+				42625C3D1438AD8A00245E8B /* TimeEntry.h */,
+				42625C3E1438AD8A00245E8B /* TimeEntry.m */,
+				428EDB0714379B4A00C2C1FC /* DBManagedObjectCache.h */,
+				428EDB0814379B4A00C2C1FC /* DBManagedObjectCache.m */,
+				42AC9D3C143CED7B000824D0 /* Constants.h */,
+			);
+			name = Lib;
+			sourceTree = "<group>";
+		};
+		429890F6143705B100408CC0 = {
+			isa = PBXGroup;
+			children = (
+				42989125143777E600408CC0 /* RestKit.xcodeproj */,
+				4298910B143705B200408CC0 /* bc-timetracker-cd */,
+				42989104143705B200408CC0 /* Frameworks */,
+				42989102143705B200408CC0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		42989102143705B200408CC0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42989101143705B200408CC0 /* bc-timetracker-cd.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		42989104143705B200408CC0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42DC43C9144391CA0012BA23 /* QuartzCore.framework */,
+				426E1215144083E00054D2D8 /* HAKeychain.framework */,
+				42DD0CE01440775E00A38656 /* Security.framework */,
+				42989108143705B200408CC0 /* AppKit.framework */,
+				42989109143705B200408CC0 /* CoreData.framework */,
+				4298910A143705B200408CC0 /* Foundation.framework */,
+				429891551437791E00408CC0 /* SystemConfiguration.framework */,
+				429891531437791400408CC0 /* libxml2.dylib */,
+				42989105143705B200408CC0 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4298910B143705B200408CC0 /* bc-timetracker-cd */ = {
+			isa = PBXGroup;
+			children = (
+				42AC9D69143D055A000824D0 /* Resources */,
+				428EDB0A14379F6900C2C1FC /* Lib */,
+				42989174143779F800408CC0 /* Models */,
+				42B6D7191437A9C100019336 /* Controllers */,
+				42D704E71446CD200020FEF6 /* Xibs */,
+				42989117143705B200408CC0 /* bc_timetracker_cdAppDelegate.h */,
+				42989118143705B200408CC0 /* bc_timetracker_cdAppDelegate.m */,
+				4298911D143705B300408CC0 /* bc_timetracker_cd.xcdatamodeld */,
+				4298910C143705B200408CC0 /* Supporting Files */,
+			);
+			path = "bc-timetracker-cd";
+			sourceTree = "<group>";
+		};
+		4298910C143705B200408CC0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4298910D143705B200408CC0 /* bc-timetracker-cd-Info.plist */,
+				4298910E143705B200408CC0 /* InfoPlist.strings */,
+				42989111143705B200408CC0 /* main.m */,
+				42989113143705B200408CC0 /* bc-timetracker-cd-Prefix.pch */,
+				42989114143705B200408CC0 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		42989126143777E600408CC0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4298913A143777E700408CC0 /* libRestKitNetwork.a */,
+				4298913C143777E700408CC0 /* libRestKitObjectMapping.a */,
+				4298913E143777E700408CC0 /* libRestKitSupport.a */,
+				42989148143777E700408CC0 /* libRestKitXMLParserLibxml.a */,
+				4298914A143777E700408CC0 /* libRestKitCoreData.a */,
+				4298914E143777E700408CC0 /* RestKitSpecs.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		42989174143779F800408CC0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4298917514377A1B00408CC0 /* Settings.h */,
+				4298917614377A1B00408CC0 /* Settings.m */,
+				4298917714377A1B00408CC0 /* Project.h */,
+				4298917814377A1B00408CC0 /* Project.m */,
+				4298917914377A1B00408CC0 /* Company.h */,
+				4298917A14377A1B00408CC0 /* Company.m */,
+				42625C331438A46300245E8B /* Person.h */,
+				42625C341438A46300245E8B /* Person.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		42AC9D69143D055A000824D0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				426E12181441DB250054D2D8 /* Status_Accepted.png */,
+				426E12191441DB250054D2D8 /* Status_Declined.png */,
+				42D92E5A143E529B0056A416 /* file_menu2.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		42B6D7191437A9C100019336 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				42B6D71A1437A9EA00019336 /* AppController.h */,
+				42B6D71B1437A9EA00019336 /* AppController.m */,
+				42D92E5C143E55810056A416 /* PreferencesController.h */,
+				42D92E5D143E55810056A416 /* PreferencesController.m */,
+				42DC43C614438C850012BA23 /* ApplicationController.h */,
+				42DC43C714438C850012BA23 /* ApplicationController.m */,
+				4292DEFF1444B94300805B89 /* TimeTrackerController.h */,
+				4292DF001444B94300805B89 /* TimeTrackerController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		42D704E71446CD200020FEF6 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				4298911A143705B300408CC0 /* MainMenu.xib */,
+				4292DF011444B94300805B89 /* TimeTrackerView.xib */,
+				4249D5981437C1F30086F1EE /* MainWindow.xib */,
+				42AC9D36143CE274000824D0 /* PreferencesWindow.xib */,
+			);
+			name = Xibs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		42989100143705B200408CC0 /* bc-timetracker-cd */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42989122143705B300408CC0 /* Build configuration list for PBXNativeTarget "bc-timetracker-cd" */;
+			buildPhases = (
+				429890FD143705B200408CC0 /* Sources */,
+				429890FE143705B200408CC0 /* Frameworks */,
+				429890FF143705B200408CC0 /* Resources */,
+				42DD0D4C14407E0E00A38656 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42989150143778CB00408CC0 /* PBXTargetDependency */,
+			);
+			name = "bc-timetracker-cd";
+			productName = "bc-timetracker-cd";
+			productReference = 42989101143705B200408CC0 /* bc-timetracker-cd.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		429890F8143705B100408CC0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "winston design";
+			};
+			buildConfigurationList = 429890FB143705B100408CC0 /* Build configuration list for PBXProject "bc-timetracker-cd" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 429890F6143705B100408CC0;
+			productRefGroup = 42989102143705B200408CC0 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 42989126143777E600408CC0 /* Products */;
+					ProjectRef = 42989125143777E600408CC0 /* RestKit.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				42989100143705B200408CC0 /* bc-timetracker-cd */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		4298913A143777E700408CC0 /* libRestKitNetwork.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRestKitNetwork.a;
+			remoteRef = 42989139143777E700408CC0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4298913C143777E700408CC0 /* libRestKitObjectMapping.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRestKitObjectMapping.a;
+			remoteRef = 4298913B143777E700408CC0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4298913E143777E700408CC0 /* libRestKitSupport.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRestKitSupport.a;
+			remoteRef = 4298913D143777E700408CC0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		42989148143777E700408CC0 /* libRestKitXMLParserLibxml.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRestKitXMLParserLibxml.a;
+			remoteRef = 42989147143777E700408CC0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4298914A143777E700408CC0 /* libRestKitCoreData.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRestKitCoreData.a;
+			remoteRef = 42989149143777E700408CC0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4298914E143777E700408CC0 /* RestKitSpecs.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = RestKitSpecs.app;
+			remoteRef = 4298914D143777E700408CC0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		429890FF143705B200408CC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42989110143705B200408CC0 /* InfoPlist.strings in Resources */,
+				42989116143705B200408CC0 /* Credits.rtf in Resources */,
+				4298911C143705B300408CC0 /* MainMenu.xib in Resources */,
+				4249D5991437C1F30086F1EE /* MainWindow.xib in Resources */,
+				42AC9D37143CE274000824D0 /* PreferencesWindow.xib in Resources */,
+				42D92E5B143E529B0056A416 /* file_menu2.png in Resources */,
+				426E121A1441DB250054D2D8 /* Status_Accepted.png in Resources */,
+				426E121B1441DB250054D2D8 /* Status_Declined.png in Resources */,
+				4292DF031444B94300805B89 /* TimeTrackerView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		429890FD143705B200408CC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42989112143705B200408CC0 /* main.m in Sources */,
+				42989119143705B200408CC0 /* bc_timetracker_cdAppDelegate.m in Sources */,
+				4298911F143705B300408CC0 /* bc_timetracker_cd.xcdatamodeld in Sources */,
+				4298917B14377A1B00408CC0 /* Settings.m in Sources */,
+				4298917C14377A1B00408CC0 /* Project.m in Sources */,
+				4298917D14377A1B00408CC0 /* Company.m in Sources */,
+				428EDB0914379B4A00C2C1FC /* DBManagedObjectCache.m in Sources */,
+				42B6D71C1437A9EA00019336 /* AppController.m in Sources */,
+				42625C351438A46300245E8B /* Person.m in Sources */,
+				42625C3F1438AD8A00245E8B /* TimeEntry.m in Sources */,
+				42D92E5E143E55810056A416 /* PreferencesController.m in Sources */,
+				42DC43C4144386A90012BA23 /* CustomStatusItem.m in Sources */,
+				42DC43C5144386A90012BA23 /* CustomWindow.m in Sources */,
+				42DC43C814438C860012BA23 /* ApplicationController.m in Sources */,
+				4292DF021444B94300805B89 /* TimeTrackerController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		42989150143778CB00408CC0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RestKit;
+			targetProxy = 4298914F143778CB00408CC0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4298910E143705B200408CC0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4298910F143705B200408CC0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		42989114143705B200408CC0 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42989115143705B200408CC0 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		4298911A143705B300408CC0 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4298911B143705B300408CC0 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		42989120143705B300408CC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = unsupported;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		42989121143705B300408CC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = unsupported;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		42989123143705B300408CC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Arvid Andersson Dev CodeSign";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/HAKeychain\"",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bc-timetracker-cd/bc-timetracker-cd-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(SOURCE_ROOT)/RestKit/Code/Support/Parsers",
+					"$(SOURCE_ROOT)/RestKit/Build",
+				);
+				INFOPLIST_FILE = "bc-timetracker-cd/bc-timetracker-cd-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		42989124143705B300408CC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Arvid Andersson Dev CodeSign";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/HAKeychain\"",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bc-timetracker-cd/bc-timetracker-cd-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(SOURCE_ROOT)/RestKit/Code/Support/Parsers",
+					"$(SOURCE_ROOT)/RestKit/Build",
+				);
+				INFOPLIST_FILE = "bc-timetracker-cd/bc-timetracker-cd-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		429890FB143705B100408CC0 /* Build configuration list for PBXProject "bc-timetracker-cd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42989120143705B300408CC0 /* Debug */,
+				42989121143705B300408CC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42989122143705B300408CC0 /* Build configuration list for PBXNativeTarget "bc-timetracker-cd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42989123143705B300408CC0 /* Debug */,
+				42989124143705B300408CC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4298911D143705B300408CC0 /* bc_timetracker_cd.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4298918314378B4D00408CC0 /* bc_timetracker_cd 2.xcdatamodel */,
+				4298911E143705B300408CC0 /* bc_timetracker_cd.xcdatamodel */,
+			);
+			currentVersion = 4298911E143705B300408CC0 /* bc_timetracker_cd.xcdatamodel */;
+			path = bc_timetracker_cd.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 429890F8143705B100408CC0 /* Project object */;
+}
