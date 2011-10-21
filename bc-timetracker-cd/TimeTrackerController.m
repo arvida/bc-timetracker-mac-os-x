@@ -42,7 +42,7 @@
 -(IBAction)startTimer:(id)sender
 {
   [timer dealloc];
-  timer = [NSTimer scheduledTimerWithTimeInterval: 60*5 // update time every 5 minutes
+  timer = [NSTimer scheduledTimerWithTimeInterval: 60*kUpdateTimeTrackerEveryMinutes
                                            target: self
                                          selector: @selector(handleTimer:)
                                          userInfo: nil
@@ -62,7 +62,7 @@
 
 -(IBAction)handleTimer:(id)timer 
 {
-  float inc = 0.0166666667; // 0.0166666667*60 ≈ 1
+  float inc = 0.0166666667*kUpdateTimeTrackerEveryMinutes; // 0.0166666667*60 ≈ 1
   NSNumber *currentHours = [[NSNumber alloc] initWithFloat:([hoursField floatValue]+inc)];
   [hoursField setFloatValue:[currentHours floatValue]];
 }

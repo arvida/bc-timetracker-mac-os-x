@@ -15,6 +15,8 @@
 
 #define kAppName @"Basecamp TimeTracker"
 
+#define kUpdateTimeTrackerEveryMinutes 5
+
 #define kUserDefaultsFrameOriginX @"kUserDefaultsFrameOriginX"
 #define kUserDefaultsFrameOriginY @"kUserDefaultsFrameOriginY"
 
