@@ -2,10 +2,10 @@
 <archive type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="8.00">
 	<data>
 		<int key="IBDocument.SystemTarget">1070</int>
-		<string key="IBDocument.SystemVersion">11B26</string>
+		<string key="IBDocument.SystemVersion">11C74</string>
 		<string key="IBDocument.InterfaceBuilderVersion">1617</string>
-		<string key="IBDocument.AppKitVersion">1138</string>
-		<string key="IBDocument.HIToolboxVersion">566.00</string>
+		<string key="IBDocument.AppKitVersion">1138.23</string>
+		<string key="IBDocument.HIToolboxVersion">567.00</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.CocoaPlugin</string>
 			<string key="NS.object.0">1617</string>
@@ -94,6 +94,7 @@
 								<dictionary class="NSMutableDictionary" key="NS.attributes">
 									<boolean value="YES" key="allowsFloats"/>
 									<integer value="1040" key="formatterBehavior"/>
+									<string key="groupingSeparator">,</string>
 									<object class="NSLocale" key="locale">
 										<string key="NS.identifier"/>
 									</object>
@@ -104,6 +105,7 @@
 									<integer value="1" key="numberStyle"/>
 									<string key="positiveFormat">##,##00.00</string>
 									<string key="positiveInfinitySymbol">+∞</string>
+									<boolean value="NO" key="usesGroupingSeparator"/>
 								</dictionary>
 								<string key="NS.positiveformat">##,##00.00</string>
 								<string key="NS.negativeformat">##.##0.###</string>
@@ -134,7 +136,7 @@
 								</object>
 								<string key="NS.decimal">.</string>
 								<string key="NS.thousand">,</string>
-								<bool key="NS.hasthousands">YES</bool>
+								<bool key="NS.hasthousands">NO</bool>
 								<bool key="NS.localized">NO</bool>
 								<bool key="NS.allowsfloats">YES</bool>
 							</object>
@@ -231,6 +233,7 @@
 						<string key="NSFrame">{{295, 10}, {145, 32}}</string>
 						<reference key="NSSuperview" ref="1005"/>
 						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:161</string>
 						<bool key="NSEnabled">YES</bool>
 						<object class="NSButtonCell" key="NSCell" id="865486923">
@@ -646,8 +649,8 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA</b
 							<reference ref="814509570"/>
 							<reference ref="768780046"/>
 							<reference ref="448616727"/>
-							<reference ref="637269667"/>
 							<reference ref="859138505"/>
+							<reference ref="637269667"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -864,7 +867,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA</b
 				<string key="16.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="17.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<integer value="1040" key="18.IBNumberFormatterBehaviorMetadataKey"/>
-				<boolean value="YES" key="18.IBNumberFormatterLocalizesFormatMetadataKey"/>
+				<boolean value="NO" key="18.IBNumberFormatterLocalizesFormatMetadataKey"/>
 				<string key="18.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="19.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="20.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
